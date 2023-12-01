@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="full">
+    <ion-label position="floating">Username</ion-label>
+    <ion-input type="text" [(ngModel)]="username" required="required" />
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" required="required" />
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" color="primary" expand="block" (click)="login()"
+        >Login</ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-content>
